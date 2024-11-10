@@ -1,5 +1,14 @@
+import Head from "next/head";
+
 function Cabins() {
-  return <div>Cabins page</div>;
+  return (
+    <>
+      <Head>
+        <title>Cabins // The Wild Oasis</title>
+      </Head>
+      <div>Cabins page</div>
+    </>
+  );
 }
 
 export default Cabins;
