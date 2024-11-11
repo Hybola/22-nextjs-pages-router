@@ -4,7 +4,7 @@ import Head from "next/head";
 //Statically generated (SSG)
 export async function getStaticProps() {
   const cabins = await getCabins();
-  return { props: { cabins } };
+  return { props: { cabins }, revalidate: 3600 };
 }
 
 function Cabins({ cabins }) {
